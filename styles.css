@@ -1,3 +1,8 @@
+ body {
+      background-image: url('giphy.gif');
+        background-repeat: no-repeat, repeat;
+  background-size: cover; 
+    }
 selector {
     property: value;
 }
@@ -11,7 +16,7 @@ body {
     padding: 20px;
 }
 color: red;
-background-color: lightblue;
+background-color: black;
 color: #FF0000; 
 color: #0000FF; 
 color: #333333; 
@@ -48,8 +53,83 @@ li {
 }
 img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 10px;
     display: block;
     margin: 20px auto;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+.highlight {
+    background-color: #ffc400;
+    color: #856404;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.highlight2 {
+    background-color: rgb(216, 216, 0);
+    font-weight: bold;
+}
+.highlight2 {
+    background-color: #ffffff;
+    color: #856404;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.342);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgb(183, 0, 255);
+    border-left: 5px solid #cc00ff;  /* Add this line */
+    transition: transform 0.3s ease;  /* Add this line */
+}
+
+.card:hover {
+    transform: translateY(-60px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cards {
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgb(255, 0, 0);
+    border-left: 5px solid rgb(255, 0, 0);  /* Add this line */
+    transition: transform 0.3s ease;  /* Add this line */
+}
+
+.cards:hover {
+    transform: translateY(-60px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+    list-style: none;  /* Removes default bullets */
+    padding-left: 0;
+}
+
+li {
+    color: #ff0000;
+    font-size: 20px;
+    margin: 12px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+li:before {
+    content: "★";
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
 }
